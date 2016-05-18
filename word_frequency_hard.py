@@ -50,8 +50,6 @@ word_list = []
 
 for i in sorted_list:
     number_list.append(i[1])
-
-for i in sorted_list:
     word_list.append(i[0])
 
 sorted_words = sorted(word_list, key=len)
@@ -59,5 +57,5 @@ sorted_words = sorted(word_list, key=len)
 print(sorted_words[-1])
 print(max(number_list))
 
-for i in sorted_list:
-    print(i)
+for word, counter in sorted_list:
+    print(word, counter * "|")
