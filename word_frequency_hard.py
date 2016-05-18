@@ -59,3 +59,5 @@ print(max(number_list))
 
 for word, counter in sorted_list:
     print(word, counter * "|")
+
+opened_file.close()

@@ -31,5 +31,7 @@ for word, count in word_count.items():
 sorted_list = ((sorted(word_count_list, key=getKey, reverse=True))[0:19])
 
 
-for i in sorted_list:
-    print(i)
+for word, count in sorted_list:
+    print(word, count)
+
+opened_file.close()
